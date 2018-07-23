@@ -1,0 +1,90 @@
+.navbar {
+    margin-top: 2rem;
+    min-height: rem-calc(50);
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+
+    .logo {
+        position: absolute;
+        left: 4rem;
+        width: rem-calc(146);
+        height: rem-calc(41);
+        z-index: 1;
+    }
+
+    .sidebar {
+        position: absolute;
+        right: 4rem;
+        z-index: 2;
+        min-width: rem-calc(200);
+
+        @include breakpoint (small only) {
+            right: 1rem;
+        }
+
+        .menu-text {
+            color: #fff;
+            opacity: .5;
+        }
+
+        button.hamburger {
+            outline: none;
+        }
+
+
+
+    }
+}
+
+.overlay {
+    height: 100vh;
+    background: linear-gradient(to bottom, lighten($color-independance, 10%), darken($color-independance, 10%));
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 17rem;
+    padding-top: 6rem;
+    z-index: 11;
+    transition: all .3s ease-in-out;
+
+    &.is-active {
+        transition: all .3s ease-in-out;
+        right: 0;
+    }
+
+    .menu {
+        @extend .h5;
+
+        li {
+            list-style: none;
+            text-decoration: none;
+            margin: .75rem 0;
+            position: relative;
+        }
+
+
+        &.sub-navigation {
+            @extend .h6;
+            margin-top: 2rem !important;
+            margin-bottom: 2rem !important;
+
+            .menu-item {
+                margin: .25rem 0;
+            }
+
+            a {
+                position: relative;
+                z-index: 10;
+                color: $color-menu-red !important;
+
+                &::after {
+                    height: rem-calc(6) !important;
+                    width: 90% !important;
+                    bottom: .7rem;
+                }
+            }
+        }
+    }
+}

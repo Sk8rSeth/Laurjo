@@ -1,0 +1,132 @@
+.underline, .menu .menu-item:hover > a {
+    position: relative;
+    color: $color-font-white;
+
+    &::after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        bottom: .5rem;
+        left: .9rem;
+        height: rem-calc(9);
+        width: 100%;
+        background-color: $color-underline-red;
+    }
+}
+
+.social-buttons {
+    a {
+        color: $color-font-white;
+        opacity: .5;
+        margin: 0 .2rem;
+
+        &:hover {
+            color: $color-underline-red;
+            opacity: 1;
+        }
+    }
+}
+
+.current-menu-item {
+    @extend .underline;
+
+    &::after {
+        background-color: $color-underline-purple;
+    }
+}
+
+.btn {
+    @extend .h3;
+    color: $color-menu-red;
+    position: relative;
+    z-index: 10;
+
+    &::after {
+        content: url('../icons/Arrow-Static-small.png');
+        height: 1rem;
+        width: 1rem;
+        right: -.75rem;
+        top: 0rem;
+        position: absolute;
+    }
+
+    span {
+        height: 1.9px;
+        background-color: $color-terra-cota;
+        width: 20px;
+        position: absolute;
+        z-index: 11;
+        top: 54.5%;
+        right: -1rem;
+        transition: all .3s ease-in-out;
+
+        @include breakpoint( small only ) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: $color-menu-red;
+        span {
+            width: 100%;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.btn-rev {
+    @extend .h3;
+    color: $color-menu-red;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+        content: url('../icons/Arrow-Static-Rev-small.png');
+        height: 1rem;
+        width: 1rem;
+        left: -.75rem;
+        top: 0rem;
+        position: absolute;
+    }
+
+    span {
+        height: 1.9px;
+        background-color: $color-terra-cota;
+        width: 20px;
+        position: absolute;
+        z-index: 11;
+        top: 54.5%;
+        left: -.5rem;
+        transition: all .3s ease-in-out;
+
+        @include breakpoint( small only ) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: $color-menu-red;
+        span {
+            width: 100%;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.btn-alt {
+    &:hover {
+        @extend .underline;
+
+        &::after {
+            bottom: .1rem;
+            left: -.2rem;
+            width: 110%;
+        }
+    }
+
+}
+
+
+.back-button {
+    text-align: right;
+}

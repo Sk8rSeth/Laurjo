@@ -1,0 +1,94 @@
+.images-container {
+    .image-link {
+        z-index: 1;
+        position: absolute;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+
+        // image hover state only applicable when image_link included
+        &.hover-positive {
+
+            &::after {
+                content: '';
+                z-index: 2;
+                position: absolute;
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $color-rhythm;
+            }
+
+            .hover-text {
+                position: absolute;
+                z-index: 3;
+                top: 2.5rem;
+                left: 0;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+
+                &.underline {
+                    &::after {
+                        bottom: .2rem;
+                    }
+                }
+            }
+
+            &:hover {
+
+                .hover-text {
+                    left: 10%;
+                    opacity: 1;
+                    transition: all .3s ease-in-out;
+                }
+
+
+                &::after {
+                    opacity: .75;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        } // end hover state
+
+        &.image-0 {
+            height: rem-calc(420);
+            min-width: rem-calc(620);
+            right: 20%;
+            top: rem-calc(75);
+        }
+
+        &.image-1 {
+            height: rem-calc(360);
+            width: rem-calc(510);
+            left: 16%;
+            top: rem-calc(600);
+        }
+
+        &.image-2 {
+            height: rem-calc(665);
+            width: rem-calc(510);
+            left: 25%;
+            top: rem-calc(924);
+            z-index: 2;
+        }
+
+        &.image-3 {
+            height: rem-calc(485);
+            min-width: rem-calc(725);
+            right: 20%;
+            top: rem-calc(1660);
+        }
+
+        &.image-4 {
+            height: rem-calc(400);
+            width: rem-calc(400);
+            left: 20%;
+            top: rem-calc(1960);
+        }
+    }
+
+}
