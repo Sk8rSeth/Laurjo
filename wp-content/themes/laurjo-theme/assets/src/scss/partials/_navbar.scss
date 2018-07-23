@@ -11,6 +11,12 @@
         width: rem-calc(146);
         height: rem-calc(41);
         z-index: 1;
+        @include breakpoint (small only) {
+            left: 2rem;
+            img {
+                height: rem-calc(24);
+            }
+        }
     }
 
     .sidebar {

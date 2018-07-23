@@ -11159,6 +11159,11 @@ template {
     width: 9.125rem;
     height: 2.5625rem;
     z-index: 1; }
+    @media screen and (max-width: 39.9375em) {
+      .navbar .logo {
+        left: 2rem; }
+        .navbar .logo img {
+          height: 1.5rem; } }
   .navbar .sidebar {
     position: absolute;
     right: 4rem;
@@ -11547,11 +11552,11 @@ body, p {
   margin-top: 2rem; }
 
 body {
-  background-color: #3c3d56; }
+  background-color: #3c3d56;
+  overflow-x: hidden; }
   body #background-image {
     background-size: cover;
     background-position: top center;
-    overflow-x: hidden;
     position: fixed;
     top: 0;
     right: 0;
