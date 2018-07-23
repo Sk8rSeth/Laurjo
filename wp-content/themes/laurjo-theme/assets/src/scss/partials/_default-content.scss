@@ -33,6 +33,18 @@
 
     @include breakpoint(small only) {
         padding-top: rem-calc(80);
+        min-height: rem-calc(700);
+
+        // if there is more than 2 images on the page, extend the page height
+        &.total-3 {
+            min-height: rem-calc(820);
+        }
+        &.total-4 {
+            min-height: rem-calc(1000);
+        }
+        &.total-5 {
+            min-height: rem-calc(1150);
+        }
 
         .header-content {
 

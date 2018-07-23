@@ -87,6 +87,10 @@
         left: -.75rem;
         top: 0rem;
         position: absolute;
+
+        @include breakpoint( small only ) {
+            left: 1rem;
+        }
     }
 
     span {
@@ -126,7 +130,24 @@
 
 }
 
-
 .back-button {
     text-align: right;
+}
+
+@include breakpoint(small only) {
+    .back-button-container {
+        div.row {
+            justify-content: flex-start !important;
+        }
+    }
+    .fwd-button {
+        text-align: left;
+        @include flex-grid-column(16);
+
+        &.btn {
+            &::after {
+                top: .15rem;
+            }
+        }
+    }
 }

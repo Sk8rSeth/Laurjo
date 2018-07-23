@@ -16,7 +16,6 @@
                 min-width: rem-calc(240);
                 right: 10%;
                 top: rem-calc(160);
-
             }
 
             &.image-1 {
@@ -37,15 +36,15 @@
             &.image-3 {
                 height: rem-calc(160);
                 min-width: rem-calc(240);
-                right: 20%;
-                top: rem-calc(700);
+                right: 10%;
+                top: rem-calc(800);
             }
 
             &.image-4 {
                 height: rem-calc(204);
                 width: rem-calc(204);
-                left: 20%;
-                top: rem-calc(1960);
+                left: 10%;
+                top: rem-calc(900);
             }
         }
 
@@ -133,6 +132,32 @@
                 width: rem-calc(400);
                 left: 20%;
                 top: rem-calc(1960);
+            }
+        }
+    }
+
+    @include breakpoint(small only) {
+        &.mobile-case-study .image-link {
+            margin-top: rem-calc(150);
+
+            &.image-0 {
+                right: 10%;
+            }
+
+            &.image-1 {
+                left: 10%;
+            }
+
+            &.image-2 {
+                left: 35%;
+            }
+
+            &.image-3 {
+                right: 10%;
+            }
+
+            &.image-4 {
+                left: 10%;
             }
         }
     }

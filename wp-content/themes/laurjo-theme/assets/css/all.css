@@ -11376,7 +11376,14 @@ body, p {
           font-weight: 400; } }
   @media screen and (max-width: 39.9375em) {
     .page-content-container {
-      padding-top: 5rem; }
+      padding-top: 5rem;
+      min-height: 43.75rem; }
+      .page-content-container.total-3 {
+        min-height: 51.25rem; }
+      .page-content-container.total-4 {
+        min-height: 62.5rem; }
+      .page-content-container.total-5 {
+        min-height: 71.875rem; }
       .page-content-container .header-content h1 {
         position: relative;
         z-index: 10; } }
@@ -11445,6 +11452,9 @@ body, p {
     left: -.75rem;
     top: 0rem;
     position: absolute; }
+    @media screen and (max-width: 39.9375em) {
+      .btn-rev::before {
+        left: 1rem; } }
   .btn-rev span {
     height: 1.9px;
     background-color: #ed695e;
@@ -11470,6 +11480,26 @@ body, p {
 
 .back-button {
   text-align: right; }
+
+@media screen and (max-width: 39.9375em) {
+  .back-button-container div.row {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important; }
+  .fwd-button {
+    text-align: left;
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; } }
+  @media screen and (max-width: 39.9375em) and (min-width: 40em) {
+    .fwd-button {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+
+@media screen and (max-width: 39.9375em) {
+    .fwd-button.btn::after {
+      top: .15rem; } }
 
 @media screen and (max-width: 39.9375em) {
   .images-container {
@@ -11501,13 +11531,13 @@ body, p {
     .images-container .image-link.image-3 {
       height: 10rem;
       min-width: 15rem;
-      right: 20%;
-      top: 43.75rem; }
+      right: 10%;
+      top: 50rem; }
     .images-container .image-link.image-4 {
       height: 12.75rem;
       width: 12.75rem;
-      left: 20%;
-      top: 122.5rem; } }
+      left: 10%;
+      top: 56.25rem; } }
   @media screen and (min-width: 40em) {
     .images-container .image-link.hover-positive::after {
       content: '';
@@ -11563,19 +11593,51 @@ body, p {
       left: 20%;
       top: 122.5rem; } }
 
+@media screen and (max-width: 39.9375em) {
+  .images-container.mobile-case-study .image-link {
+    margin-top: 9.375rem; }
+    .images-container.mobile-case-study .image-link.image-0 {
+      right: 10%; }
+    .images-container.mobile-case-study .image-link.image-1 {
+      left: 10%; }
+    .images-container.mobile-case-study .image-link.image-2 {
+      left: 35%; }
+    .images-container.mobile-case-study .image-link.image-3 {
+      right: 10%; }
+    .images-container.mobile-case-study .image-link.image-4 {
+      left: 10%; } }
+
 .case-study-content-container {
-  position: relative;
-  min-height: 57.5rem; }
-  .case-study-content-container.total-3 {
-    min-height: 106.25rem; }
-  .case-study-content-container.total-4 {
-    min-height: 137.5rem; }
-  .case-study-content-container.total-5 {
-    min-height: 150rem; }
+  position: relative; }
+  @media screen and (min-width: 40em) {
+    .case-study-content-container {
+      min-height: 57.5rem; }
+      .case-study-content-container.total-3 {
+        min-height: 106.25rem; }
+      .case-study-content-container.total-4 {
+        min-height: 137.5rem; }
+      .case-study-content-container.total-5 {
+        min-height: 150rem; } }
+  @media screen and (max-width: 39.9375em) {
+    .case-study-content-container {
+      padding-top: 5rem;
+      min-height: 43.75rem; }
+      .case-study-content-container.total-3 {
+        min-height: 51.25rem; }
+      .case-study-content-container.total-4 {
+        min-height: 62.5rem; }
+      .case-study-content-container.total-5 {
+        min-height: 71.875rem; }
+      .case-study-content-container .header-content h1 {
+        position: relative;
+        z-index: 10; } }
   .case-study-content-container .page-content .header-content {
     margin-top: 14.0625rem;
     position: relative;
     z-index: 10; }
+    @media screen and (max-width: 39.9375em) {
+      .case-study-content-container .page-content .header-content {
+        margin-top: 1rem; } }
     .case-study-content-container .page-content .header-content h2 {
       position: relative;
       z-index: 10;
@@ -11583,6 +11645,18 @@ body, p {
     .case-study-content-container .page-content .header-content .stats-container h5 {
       color: #EC6A5E;
       margin-bottom: 1rem; }
+    @media screen and (max-width: 39.9375em) {
+      .case-study-content-container .page-content .header-content .stats-container .stat-block {
+        -ms-flex: 0 0 91.66667%;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        margin-bottom: 2rem; } }
+  @media screen and (max-width: 39.9375em) and (min-width: 40em) {
+    .case-study-content-container .page-content .header-content .stats-container .stat-block {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
   .case-study-content-container .page-content .body-content {
     position: relative;
     z-index: 10;
