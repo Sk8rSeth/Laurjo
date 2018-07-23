@@ -11662,7 +11662,9 @@ body, p {
     z-index: 10;
     margin-top: 2rem; }
     .case-study-content-container .page-content .body-content p {
-      margin-bottom: 4rem; }
+      color: #FFF;
+      margin-bottom: 4rem;
+      text-shadow: 0px 0px 12px #000; }
     .case-study-content-container .page-content .body-content h5 {
       color: #EC6A5E;
       margin-bottom: 1rem; }
