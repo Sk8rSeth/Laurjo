@@ -1,4 +1,7 @@
 .images-container {
+    @include breakpoint( small only ) {
+        overflow-x: hidden;
+    }
 
     .image-link {
         z-index: 1;

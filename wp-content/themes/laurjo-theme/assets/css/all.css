@@ -11460,6 +11460,10 @@ body, p {
 .back-button {
   text-align: right; }
 
+@media screen and (max-width: 39.9375em) {
+  .images-container {
+    overflow-x: hidden; } }
+
 .images-container .image-link {
   z-index: 1;
   position: absolute;
