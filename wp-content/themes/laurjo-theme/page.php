@@ -19,9 +19,9 @@ $count = count($images);
 </div>
 
 <div class="page-content-container row total-<?= $count; ?>">
-    <div class="page-content columns small-24 medium-20">
+    <div class="page-content columns small-20 small-offset-1 medium-offset-0">
         <div class="header-content row align-middle">
-            <h1 class="columns medium-20 <?php if(is_front_page()){echo 'home';}; ?>"><?= get_field('page_header'); ?></h1>
+            <h1 class="columns small-23 medium-20 <?php if(is_front_page()){echo 'home';}; ?>"><?= get_field('page_header'); ?></h1>
         </div>
     </div>
 </div>

@@ -1,30 +1,44 @@
 
 .page-content-container {
     position: relative;
-    min-height: rem-calc(920);
 
-    // if there is more than 2 images on the page, extend the page height
-    &.total-3 {
-        min-height: rem-calc(1700);
-    }
-    &.total-4 {
-        min-height: rem-calc(2200);
-    }
-    &.total-5 {
-        min-height: rem-calc(2400);
+    @include breakpoint(medium up) {
+        min-height: rem-calc(920);
+
+        // if there is more than 2 images on the page, extend the page height
+        &.total-3 {
+            min-height: rem-calc(1700);
+        }
+        &.total-4 {
+            min-height: rem-calc(2200);
+        }
+        &.total-5 {
+            min-height: rem-calc(2400);
+        }
+
+        .page-content {
+
+            .header-content {
+                height: rem-calc(1024);
+
+                h1 {
+                    position: relative;
+                    z-index: 10;
+                    font-weight: 400;
+
+                }
+            }
+        }
     }
 
-    .page-content {
-
+    @include breakpoint(small only) {
+        padding-top: rem-calc(80);
 
         .header-content {
-            height: rem-calc(1024);
 
             h1 {
                 position: relative;
                 z-index: 10;
-                font-weight: 400;
-
             }
         }
     }

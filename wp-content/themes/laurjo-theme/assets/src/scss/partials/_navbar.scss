@@ -53,6 +53,9 @@
     }
     right: -100%;
     width: 17rem;
+    @include breakpoint (small only) {
+        width: 15rem;
+    }
     padding-top: 6rem;
     z-index: 11;
     transition: all .3s ease-in-out;

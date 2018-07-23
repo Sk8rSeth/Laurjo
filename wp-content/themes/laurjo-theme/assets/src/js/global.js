@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+    if ($( window ).width() < 750) {
+        $('.is-active').removeClass('is-active');
+        $('body').removeClass('menu-active');
+        $('.menu-text').text('menu');
+    };
+
     $('button.hamburger').on('click', function(e){
         e.preventDefault();
         $(this).toggleClass('is-active');
@@ -12,8 +18,6 @@ $( document ).ready(function() {
             $('.menu-text').text('menu');
         }
     });
-
-
 
     $('.page_item_has_children').hover(
       function() {

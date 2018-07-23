@@ -11191,6 +11191,9 @@ template {
   @media screen and (min-width: 40em) {
     .overlay {
       bottom: 0; } }
+  @media screen and (max-width: 39.9375em) {
+    .overlay {
+      width: 15rem; } }
   .overlay.is-active {
     transition: all .3s ease-in-out;
     right: 0; }
@@ -11355,20 +11358,28 @@ body, p {
   line-height: 1.8em; }
 
 .page-content-container {
-  position: relative;
-  min-height: 57.5rem; }
-  .page-content-container.total-3 {
-    min-height: 106.25rem; }
-  .page-content-container.total-4 {
-    min-height: 137.5rem; }
-  .page-content-container.total-5 {
-    min-height: 150rem; }
-  .page-content-container .page-content .header-content {
-    height: 64rem; }
-    .page-content-container .page-content .header-content h1 {
-      position: relative;
-      z-index: 10;
-      font-weight: 400; }
+  position: relative; }
+  @media screen and (min-width: 40em) {
+    .page-content-container {
+      min-height: 57.5rem; }
+      .page-content-container.total-3 {
+        min-height: 106.25rem; }
+      .page-content-container.total-4 {
+        min-height: 137.5rem; }
+      .page-content-container.total-5 {
+        min-height: 150rem; }
+      .page-content-container .page-content .header-content {
+        height: 64rem; }
+        .page-content-container .page-content .header-content h1 {
+          position: relative;
+          z-index: 10;
+          font-weight: 400; } }
+  @media screen and (max-width: 39.9375em) {
+    .page-content-container {
+      padding-top: 5rem; }
+      .page-content-container .header-content h1 {
+        position: relative;
+        z-index: 10; } }
 
 .underline, .current-menu-item, .btn-alt:hover, .menu .menu-item:hover > a {
   position: relative;
@@ -11470,6 +11481,33 @@ body, p {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat; }
+  @media screen and (max-width: 39.9375em) {
+    .images-container .image-link.image-0 {
+      height: 10.6875rem;
+      min-width: 15rem;
+      right: 10%;
+      top: 10rem; }
+    .images-container .image-link.image-1 {
+      width: 15rem;
+      height: 10.875rem;
+      left: 10%;
+      top: 24.375rem; }
+    .images-container .image-link.image-2 {
+      height: 16.625rem;
+      width: 12.75rem;
+      left: 35%;
+      top: 31.875rem;
+      z-index: 2; }
+    .images-container .image-link.image-3 {
+      height: 10rem;
+      min-width: 15rem;
+      right: 20%;
+      top: 43.75rem; }
+    .images-container .image-link.image-4 {
+      height: 12.75rem;
+      width: 12.75rem;
+      left: 20%;
+      top: 122.5rem; } }
   @media screen and (min-width: 40em) {
     .images-container .image-link.hover-positive::after {
       content: '';
@@ -11497,33 +11535,33 @@ body, p {
       transition: all .3s ease-in-out; }
     .images-container .image-link.hover-positive:hover::after {
       opacity: .75;
-      transition: all .3s ease-in-out; } }
-  .images-container .image-link.image-0 {
-    height: 26.25rem;
-    min-width: 38.75rem;
-    right: 20%;
-    top: 4.6875rem; }
-  .images-container .image-link.image-1 {
-    height: 22.5rem;
-    width: 31.875rem;
-    left: 16%;
-    top: 37.5rem; }
-  .images-container .image-link.image-2 {
-    height: 41.5625rem;
-    width: 31.875rem;
-    left: 25%;
-    top: 57.75rem;
-    z-index: 2; }
-  .images-container .image-link.image-3 {
-    height: 30.3125rem;
-    min-width: 45.3125rem;
-    right: 20%;
-    top: 103.75rem; }
-  .images-container .image-link.image-4 {
-    height: 25rem;
-    width: 25rem;
-    left: 20%;
-    top: 122.5rem; }
+      transition: all .3s ease-in-out; }
+    .images-container .image-link.image-0 {
+      height: 26.25rem;
+      min-width: 38.75rem;
+      right: 20%;
+      top: 4.6875rem; }
+    .images-container .image-link.image-1 {
+      height: 22.5rem;
+      width: 31.875rem;
+      left: 16%;
+      top: 37.5rem; }
+    .images-container .image-link.image-2 {
+      height: 41.5625rem;
+      width: 31.875rem;
+      left: 25%;
+      top: 57.75rem;
+      z-index: 2; }
+    .images-container .image-link.image-3 {
+      height: 30.3125rem;
+      min-width: 45.3125rem;
+      right: 20%;
+      top: 103.75rem; }
+    .images-container .image-link.image-4 {
+      height: 25rem;
+      width: 25rem;
+      left: 20%;
+      top: 122.5rem; } }
 
 .case-study-content-container {
   position: relative;

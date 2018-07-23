@@ -10,6 +10,45 @@
         background-position: center top;
         background-repeat: no-repeat;
 
+        @include breakpoint(small only) {
+            &.image-0 {
+                height: rem-calc(171);
+                min-width: rem-calc(240);
+                right: 10%;
+                top: rem-calc(160);
+
+            }
+
+            &.image-1 {
+                width: rem-calc(240);
+                height: rem-calc(174);
+                left: 10%;
+                top: rem-calc(390);
+            }
+
+            &.image-2 {
+                height: rem-calc(266);
+                width: rem-calc(204);
+                left: 35%;
+                top: rem-calc(510);
+                z-index: 2;
+            }
+
+            &.image-3 {
+                height: rem-calc(160);
+                min-width: rem-calc(240);
+                right: 20%;
+                top: rem-calc(700);
+            }
+
+            &.image-4 {
+                height: rem-calc(204);
+                width: rem-calc(204);
+                left: 20%;
+                top: rem-calc(1960);
+            }
+        }
+
 
         @include breakpoint(medium up) {
             // image hover state only applicable when image_link included
@@ -58,44 +97,43 @@
                     }
                 }
             } // end hover state
-        }
 
-        &.image-0 {
-            height: rem-calc(420);
-            min-width: rem-calc(620);
-            right: 20%;
-            top: rem-calc(75);
+            &.image-0 {
+                height: rem-calc(420);
+                min-width: rem-calc(620);
+                right: 20%;
+                top: rem-calc(75);
 
-        }
+            }
 
-        &.image-1 {
-            height: rem-calc(360);
-            width: rem-calc(510);
-            left: 16%;
-            top: rem-calc(600);
-        }
+            &.image-1 {
+                height: rem-calc(360);
+                width: rem-calc(510);
+                left: 16%;
+                top: rem-calc(600);
+            }
 
-        &.image-2 {
-            height: rem-calc(665);
-            width: rem-calc(510);
-            left: 25%;
-            top: rem-calc(924);
-            z-index: 2;
-        }
+            &.image-2 {
+                height: rem-calc(665);
+                width: rem-calc(510);
+                left: 25%;
+                top: rem-calc(924);
+                z-index: 2;
+            }
 
-        &.image-3 {
-            height: rem-calc(485);
-            min-width: rem-calc(725);
-            right: 20%;
-            top: rem-calc(1660);
-        }
+            &.image-3 {
+                height: rem-calc(485);
+                min-width: rem-calc(725);
+                right: 20%;
+                top: rem-calc(1660);
+            }
 
-        &.image-4 {
-            height: rem-calc(400);
-            width: rem-calc(400);
-            left: 20%;
-            top: rem-calc(1960);
+            &.image-4 {
+                height: rem-calc(400);
+                width: rem-calc(400);
+                left: 20%;
+                top: rem-calc(1960);
+            }
         }
     }
-
 }
