@@ -11183,12 +11183,14 @@ template {
   background: linear-gradient(to bottom, #766987, #443d4d);
   position: fixed;
   top: 0;
-  bottom: 0;
   right: -100%;
   width: 17rem;
   padding-top: 6rem;
   z-index: 11;
   transition: all .3s ease-in-out; }
+  @media screen and (min-width: 40em) {
+    .overlay {
+      bottom: 0; } }
   .overlay.is-active {
     transition: all .3s ease-in-out;
     right: 0; }
@@ -11464,33 +11466,34 @@ body, p {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat; }
-  .images-container .image-link.hover-positive::after {
-    content: '';
-    z-index: 2;
-    position: absolute;
-    transition: all .3s ease-in-out;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #7c6a91; }
-  .images-container .image-link.hover-positive .hover-text {
-    position: absolute;
-    z-index: 3;
-    top: 2.5rem;
-    left: 0;
-    opacity: 0;
-    transition: all .3s ease-in-out; }
-    .images-container .image-link.hover-positive .hover-text.underline::after, .images-container .image-link.hover-positive .hover-text.current-menu-item::after, .images-container .image-link.hover-positive .hover-text.btn-alt:hover::after {
-      bottom: .2rem; }
-  .images-container .image-link.hover-positive:hover .hover-text {
-    left: 10%;
-    opacity: 1;
-    transition: all .3s ease-in-out; }
-  .images-container .image-link.hover-positive:hover::after {
-    opacity: .75;
-    transition: all .3s ease-in-out; }
+  @media screen and (min-width: 40em) {
+    .images-container .image-link.hover-positive::after {
+      content: '';
+      z-index: 2;
+      position: absolute;
+      transition: all .3s ease-in-out;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #7c6a91; }
+    .images-container .image-link.hover-positive .hover-text {
+      position: absolute;
+      z-index: 3;
+      top: 2.5rem;
+      left: 0;
+      opacity: 0;
+      transition: all .3s ease-in-out; }
+      .images-container .image-link.hover-positive .hover-text.underline::after, .images-container .image-link.hover-positive .hover-text.current-menu-item::after, .images-container .image-link.hover-positive .hover-text.btn-alt:hover::after {
+        bottom: .2rem; }
+    .images-container .image-link.hover-positive:hover .hover-text {
+      left: 10%;
+      opacity: 1;
+      transition: all .3s ease-in-out; }
+    .images-container .image-link.hover-positive:hover::after {
+      opacity: .75;
+      transition: all .3s ease-in-out; } }
   .images-container .image-link.image-0 {
     height: 26.25rem;
     min-width: 38.75rem;
@@ -11562,6 +11565,9 @@ body {
     right: 0;
     bottom: 0;
     left: 0; }
+  @media screen and (max-width: 39.9375em) {
+    body .images-container {
+      overflow-x: hidden; } }
 
 a, a:visited {
   color: #dddae2; }

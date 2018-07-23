@@ -48,7 +48,9 @@
     background: linear-gradient(to bottom, lighten($color-independance, 10%), darken($color-independance, 10%));
     position: fixed;
     top: 0;
-    bottom: 0;
+    @include breakpoint (medium up) {
+        bottom: 0;
+    }
     right: -100%;
     width: 17rem;
     padding-top: 6rem;

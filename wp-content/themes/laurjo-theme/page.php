@@ -9,7 +9,7 @@ $count = count($images);
         <?php if (!empty($images[$i]['image_link'])): ?>
             <a <?php if (!empty($images[$i]['image_link']['target'])){echo 'target=_blank';} ?> href="<?= $images[$i]['image_link']['url']; ?>" class="image-link image-<?= $i; ?> <?php if (!empty($images[$i]['image_link'])){echo 'hover-positive';} ?>"  style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt="">
                 <?php if (!empty($images[$i]['project_title'])): ?>
-                    <h4 class="hover-text underline"><?= $images[$i]['project_title']; ?></h4>
+                    <h4 class="hide-for-small-only show-for-medium-up hover-text underline"><?= $images[$i]['project_title']; ?></h4>
                 <?php endif; ?>
             </a>
         <?php else: ?>
