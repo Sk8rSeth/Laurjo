@@ -11409,7 +11409,7 @@ body, p {
       .page-content-container.total-5 {
         min-height: 71.875rem; }
       .page-content-container .header-content h1 {
-        position: fixed;
+        position: relative;
         z-index: 10; } }
 
 .underline, .current-menu-item, .btn-alt:hover {
