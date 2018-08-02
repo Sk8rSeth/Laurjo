@@ -1,6 +1,11 @@
 .images-container {
     @include breakpoint( small only ) {
         overflow-x: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 
     .image-link {
@@ -141,7 +146,7 @@
             margin-top: rem-calc(150);
 
             &.image-0 {
-                right: 10%;
+                right: -40%;
             }
 
             &.image-1 {

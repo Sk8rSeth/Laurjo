@@ -36,6 +36,10 @@
 
         button.hamburger {
             outline: none;
+
+            .hamburger-inner {
+                top: 5px;
+            }
         }
 
 
@@ -74,6 +78,31 @@
             margin: .75rem 0;
             position: relative;
         }
+        .menu-item {
+            a {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: .5rem;
+                    left: .9rem;
+                    transition: all ease-in-out .3s;
+                    width: 0%;
+                    height: rem-calc(9);
+                    z-index: -1;
+                    background-color: $color-underline-red;
+                }
+            }
+
+            &:hover > a {
+                position: relative;
+                color: $color-font-white;
+
+                &::after {
+                    width: 100%;
+                    transition: all ease-in-out .3s;
+                }
+            }
+        }
 
 
         &.sub-navigation {
@@ -83,6 +112,14 @@
 
             .menu-item {
                 margin: .25rem 0;
+
+                &:hover > a {
+
+                    &::after{
+                        width: 90% !important;
+                        transition: all ease-in-out .3s;
+                    }
+                }
             }
 
             a {
@@ -92,9 +129,14 @@
 
                 &::after {
                     height: rem-calc(6) !important;
-                    width: 90% !important;
+                    width: 0%;
+                    left: .9rem;
                     bottom: .7rem;
+                    transition: all ease-in-out .3s;
+                    z-index: -1;
                 }
+
+
             }
         }
     }

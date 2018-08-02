@@ -11,12 +11,6 @@ body {
         bottom: 0;
         left: 0;
     }
-
-    .images-container {
-        @include breakpoint (small only) {
-            overflow-x: hidden;
-        }
-    }
 }
 
 a, a:visited {
