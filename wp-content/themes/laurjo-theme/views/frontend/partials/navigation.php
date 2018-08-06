@@ -30,19 +30,19 @@
                 <img src="<?= get_field('site_logo', 'option'); ?>" alt="">
             </a>
         </div>
-        <div class="sidebar columns small-12 medium-6">
-            <div class="row align-justify align-middle">
-                <div class="columns small-18 medium-12">
-                    <h6 class="menu-text hide-for-small-only show for-medium-up">collapse</h6>
-                </div>
-                <button class="columns small-6 medium-6 align-middle hamburger hamburger--spring is-active" type="button" aria-label="Menu" aria-controls="navigation">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-        </div>
     </nav>
+</div>
+<div class="sidebar columns small-12 medium-6">
+    <div class="row align-justify align-middle">
+        <div class="columns small-18 medium-12">
+            <h6 class="menu-text hide-for-small-only show for-medium-up">collapse</h6>
+        </div>
+        <button class="columns small-6 medium-6 align-middle hamburger hamburger--spring is-active" type="button" aria-label="Menu" aria-controls="navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
 </div>
 
 

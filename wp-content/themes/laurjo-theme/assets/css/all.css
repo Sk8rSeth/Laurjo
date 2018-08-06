@@ -11164,21 +11164,30 @@ template {
         left: 2rem; }
         .navbar .logo img {
           height: 1.5rem; } }
-  .navbar .sidebar {
-    position: absolute;
-    right: 4rem;
-    z-index: 2;
-    min-width: 12.5rem; }
-    @media screen and (max-width: 39.9375em) {
-      .navbar .sidebar {
-        right: 1rem; } }
-    .navbar .sidebar .menu-text {
-      color: #fff;
-      opacity: .5; }
-    .navbar .sidebar button.hamburger {
-      outline: none; }
-      .navbar .sidebar button.hamburger .hamburger-inner {
-        top: 5px; }
+
+.sidebar {
+  position: fixed;
+  right: 4rem;
+  z-index: 13;
+  min-width: 12.5rem;
+  top: 1.5rem; }
+  @media screen and (max-width: 39.9375em) {
+    .sidebar {
+      right: 1rem; } }
+  .sidebar .menu-text {
+    color: #fff;
+    opacity: .5; }
+  .sidebar button.hamburger {
+    outline: none; }
+    .sidebar button.hamburger .hamburger-inner {
+      top: 5px; }
+  @media screen and (min-width: 40em) {
+    .sidebar .hamburger-inner {
+      width: 30px; }
+      .sidebar .hamburger-inner::before {
+        width: 30px; }
+      .sidebar .hamburger-inner::after {
+        width: 30px; } }
 
 .overlay {
   height: 100vh;
@@ -11188,7 +11197,7 @@ template {
   right: -100%;
   width: 17rem;
   padding-top: 6rem;
-  z-index: 11;
+  z-index: 12;
   transition: all .3s ease-in-out; }
   @media screen and (min-width: 40em) {
     .overlay {
@@ -11204,6 +11213,9 @@ template {
     text-decoration: none;
     margin: .75rem 0;
     position: relative; }
+    @media screen and (max-width: 39.9375em) {
+      .overlay .menu li {
+        margin: 0; } }
   .overlay .menu .menu-item a::after {
     content: '';
     position: absolute;
@@ -11216,7 +11228,7 @@ template {
     background-color: #EC6A5E; }
   .overlay .menu .menu-item:hover > a {
     position: relative;
-    color: #dddae2; }
+    color: #FFF; }
     .overlay .menu .menu-item:hover > a::after {
       width: 100%;
       transition: all ease-in-out .3s; }
@@ -11248,7 +11260,7 @@ template {
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-  padding: 10px 10px;
+  padding: 8px 8px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -11265,7 +11277,7 @@ template {
     opacity: 0.75; }
 
 .hamburger-box {
-  width: 30px;
+  width: 24px;
   height: 22px;
   display: inline-block;
   position: relative; }
@@ -11275,7 +11287,7 @@ template {
   top: 50%;
   margin-top: -1px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 30px;
+    width: 24px;
     height: 2px;
     background-color: #EFA199;
     border-radius: 1px;
@@ -11378,7 +11390,7 @@ h6, .h6, .overlay .menu.sub-navigation {
 body, p {
   font-family: "Questa Sans", sans-serif;
   font-size: 1rem;
-  color: #dddae2;
+  color: #FFF;
   line-height: 1.8em; }
 
 .page-content-container {
@@ -11395,27 +11407,33 @@ body, p {
       .page-content-container .page-content .header-content {
         height: 64rem; }
         .page-content-container .page-content .header-content h1 {
+          color: #FFF;
           position: fixed;
           z-index: 10;
-          font-weight: 400; } }
+          font-weight: 600;
+          text-shadow: 0 0 48px #5D536B; } }
   @media screen and (max-width: 39.9375em) {
     .page-content-container {
       padding-top: 5rem;
       min-height: 43.75rem; }
-      .page-content-container.total-3 {
-        min-height: 51.25rem; }
-      .page-content-container.total-4 {
-        min-height: 62.5rem; }
-      .page-content-container.total-5 {
-        min-height: 71.875rem; }
       .page-content-container .header-content h1 {
+        color: #FFF;
         position: relative;
-        z-index: 10; } }
+        z-index: 10;
+        text-shadow: 0 0 48px #5D536B; } }
 
-.underline, .current-menu-item, .btn-alt:hover {
+@media screen and (max-width: 39.9375em) {
+  .total-3 {
+    min-height: 51.25rem; }
+  .total-4 {
+    min-height: 62.5rem; }
+  .total-5 {
+    min-height: 71.875rem; } }
+
+.underline, .current-menu-item, .btn-alt {
   position: relative;
-  color: #dddae2; }
-  .underline::after, .current-menu-item::after, .btn-alt:hover::after {
+  color: #FFF; }
+  .underline::after, .current-menu-item::after, .btn-alt::after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -11426,7 +11444,7 @@ body, p {
     background-color: #EC6A5E; }
 
 .social-buttons a {
-  color: #dddae2;
+  color: #FFF;
   opacity: .5;
   margin: 0 .2rem; }
   .social-buttons a:hover {
@@ -11497,10 +11515,19 @@ body, p {
       width: 100%;
       transition: all .3s ease-in-out; }
 
-.btn-alt:hover::after {
-  bottom: .1rem;
-  left: -.2rem;
-  width: 110%; }
+.btn-alt {
+  color: #FFF; }
+  .btn-alt::after {
+    width: 0;
+    transition: all .3s ease-in-out;
+    bottom: .1rem;
+    left: -.2rem; }
+  .btn-alt:hover {
+    color: #FFF; }
+    .btn-alt:hover::after {
+      left: -.2rem;
+      width: 110%;
+      transition: all .3s ease-in-out; }
 
 .back-button {
   text-align: right; }
@@ -11578,16 +11605,18 @@ body, p {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #7c6a91; }
+      background-color: #AA9ECD; }
     .images-container .image-link.hover-positive .hover-text {
       position: absolute;
       z-index: 3;
       top: 2.5rem;
       left: 0;
       opacity: 0;
-      transition: all .3s ease-in-out; }
-      .images-container .image-link.hover-positive .hover-text.underline::after, .images-container .image-link.hover-positive .hover-text.current-menu-item::after, .images-container .image-link.hover-positive .hover-text.btn-alt:hover::after {
-        bottom: .2rem; }
+      transition: all .3s ease-in-out;
+      color: #FFF; }
+      .images-container .image-link.hover-positive .hover-text.underline::after, .images-container .image-link.hover-positive .hover-text.current-menu-item::after, .images-container .image-link.hover-positive .hover-text.btn-alt::after {
+        bottom: .2rem;
+        left: 0; }
     .images-container .image-link.hover-positive:hover .hover-text {
       left: 10%;
       opacity: 1;
@@ -11702,8 +11731,10 @@ body, p {
   margin-top: 2rem; }
 
 body {
-  background-color: #3c3d56;
-  overflow-x: hidden; }
+  background-color: #3c3d56; }
+  @media screen and (min-width: 40em) {
+    body {
+      overflow-x: hidden; } }
   body #background-image {
     background-size: cover;
     background-position: top center;
@@ -11714,7 +11745,7 @@ body {
     left: 0; }
 
 a, a:visited {
-  color: #dddae2; }
+  color: #FFF; }
 
 .visible {
   display: block !important; }

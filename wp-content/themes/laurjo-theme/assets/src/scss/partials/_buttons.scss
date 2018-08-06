@@ -118,13 +118,21 @@
 }
 
 .btn-alt {
+    @extend .underline;
+    color: #FFF;
+    &::after {
+        width: 0;
+        transition: all .3s ease-in-out;
+        bottom: .1rem;
+        left: -.2rem;
+    }
     &:hover {
-        @extend .underline;
+        color: #FFF;
 
         &::after {
-            bottom: .1rem;
             left: -.2rem;
             width: 110%;
+            transition: all .3s ease-in-out;
         }
     }
 

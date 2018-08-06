@@ -1,6 +1,8 @@
 body {
     background-color: lighten($color-gunmetal, 10%);
-    overflow-x: hidden;
+    @include breakpoint(medium up){
+        overflow-x: hidden;
+    }
 
     #background-image {
         background-size: cover;

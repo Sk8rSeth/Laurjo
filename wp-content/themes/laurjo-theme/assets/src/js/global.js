@@ -27,4 +27,11 @@ $( document ).ready(function() {
       }
     );
 
+    // if ($('body').width() < 325) {
+    //     // $('.navbar').css('z-index', '12');
+    //     $('.logo').css('z-index', '12');
+    //     $('.overlay').css('z-index', '23');
+    //     $('.sidebar').css('z-index', '34');
+    // };
+
 });
