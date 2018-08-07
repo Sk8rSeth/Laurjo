@@ -3,6 +3,9 @@
 $images = get_field('gallery_images');
 $count = count($images);
 ?>
+<script type="text/javascript">
+    window.addEventListener('load', AOS.refresh);
+</script>
 
 <div class="images-container total-<?= $count; ?>">
     <?php for ($i=0; $i < $count; $i++) { ?>
