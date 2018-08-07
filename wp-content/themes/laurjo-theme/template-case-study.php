@@ -9,19 +9,25 @@ $count = count($images);
 
 
 ?>
+<div class="reveal small modal-container" data-reveal id="modal-reveal">
+    <img src="<?= $count; ?>" alt="">
+    <div class="close-button" data-close aria-label="Close modal"></div>
+</div>
 
-<div class="images-container mobile-case-study">
+<div class="images-container mobile-case-study total-<?= $count; ?>">
 
     <?php
     for ($i=0; $i < $count; $i++) { ?>
         <?php if (!empty($images[$i]['image_link'])): ?>
-            <a <?php if (!empty($images[$i]['image_link']['target'])){echo 'target=_blank';} ?> href="<?= $images[$i]['image_link']['url']; ?>" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></a>
+            <a data-image="<?= $images[$i]['image_file']; ?>" data-aos="fade-right" data-aos-delay="50" <?php if (!empty($images[$i]['image_link']['target'])){echo 'target=_blank';} ?> href="<?= $images[$i]['image_link']['url']; ?>" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></a>
         <?php else: ?>
-            <div class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></div>
+            <div data-image="<?= $images[$i]['image_file']; ?>" data-aos="fade-right" data-aos-delay="50" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></div>
         <?php endif; ?>
 
     <?php } ?>
 </div>
+
+
 <div class="case-study-content-container row total-<?= $count; ?>">
 
     <div class="page-content columns small-22 small-offset-1 medium-20 medium-offset-0">
@@ -70,7 +76,7 @@ $count = count($images);
             <?php endif; ?>
         </div>
         <div class="body-content row">
-            <div class="columns medium-10 medium-offset-14">
+            <div class="columns small-22 medium-10 medium-offset-14">
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
                     the_content();
                 endwhile; endif; ?>

@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(document).foundation();
 
     if ($( window ).width() < 750) {
         $('.is-active').removeClass('is-active');
@@ -27,11 +28,21 @@ $( document ).ready(function() {
       }
     );
 
-    // if ($('body').width() < 325) {
-    //     // $('.navbar').css('z-index', '12');
-    //     $('.logo').css('z-index', '12');
-    //     $('.overlay').css('z-index', '23');
-    //     $('.sidebar').css('z-index', '34');
-    // };
+    if ($(window).width() < 640) {
+        $('.mobile-case-study ').on('click', '.image-link', function() {
+            $('.modal-container').find('img').attr('src', $(this).data('image'));
+            var popup = new Foundation.Reveal($('#modal-reveal'));
+            popup.open();
+        })
+    }
+
+
+
+    //init the image fade in
+    setTimeout(function(){
+        AOS.init({
+            duration: 1200,
+        });
+    },1000);
 
 });

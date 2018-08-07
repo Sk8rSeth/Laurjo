@@ -1,4 +1,4 @@
-.case-study-content-container {
+.case-study-content-container, mobile-case-study {
     position: relative;
 
     @include breakpoint(medium up) {
@@ -25,10 +25,10 @@
             min-height: rem-calc(820);
         }
         &.total-4 {
-            min-height: rem-calc(1000);
+            min-height: rem-calc(1100);
         }
         &.total-5 {
-            min-height: rem-calc(1150);
+            min-height: rem-calc(1300);
         }
 
         .header-content {
@@ -76,6 +76,9 @@
             position: relative;
             z-index: 10;
             margin-top: 2rem;
+            @include breakpoint(small only) {
+                margin-top: 7rem;
+            }
 
             p {
                 color: #FFF;
@@ -92,4 +95,13 @@
 }
 .back-button-container {
     margin-top: 2rem;
+}
+
+
+.case-study-content-container {
+    .body-content {
+        @include breakpoint(small only) {
+            width: 75%;
+        }
+    }
 }

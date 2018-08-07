@@ -19,7 +19,8 @@ var sassIncludePaths = [
     './assets/src/node_modules/bourbon/app/assets/stylesheets/',
     './assets/src/fontawesome-css/scss/',
     './assets/src/node_modules/hamburgers/_sass/hamburgers/',
-    './assets/src/node_modules/normalize.css/'
+    './assets/src/node_modules/normalize.css/',
+    // './assets/src/node_modules/aos/dist/aos.css'
 ];
 
 // Paths for task files
@@ -32,7 +33,9 @@ var paths = {
         concat: [
             'assets/src/node_modules/jquery/dist/jquery.min.js',
             // add new plugins here
-            'assets/src/js/**/*.js'
+            'assets/src/js/**/*.js',
+            'assets/src/node_modules/aos/dist/aos.js',
+            'assets/src/node_modules/foundation-sites/dist/js/foundation.js',
         ]
     },
     sync: [

@@ -7,13 +7,13 @@ $count = count($images);
 <div class="images-container total-<?= $count; ?>">
     <?php for ($i=0; $i < $count; $i++) { ?>
         <?php if (!empty($images[$i]['project_title'])): ?>
-            <a <?php if (!empty($images[$i]['image_link']['target'])){echo 'target=_blank';} ?> href="<?= $images[$i]['image_link']['url']; ?>" class="image-link image-<?= $i; ?> <?php if (!empty($images[$i]['image_link'])){echo 'hover-positive';} ?>"  style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt="">
+            <a data-aos="fade-right" data-aos-delay="50" <?php if (!empty($images[$i]['image_link']['target'])){echo 'target=_blank';} ?> href="<?= $images[$i]['image_link']['url']; ?>" class="image-link image-<?= $i; ?> <?php if (!empty($images[$i]['image_link'])){echo 'hover-positive';} ?>"  style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt="">
                 <?php if (!empty($images[$i]['project_title'])): ?>
                     <h4 class="hide-for-small-only show-for-medium-up hover-text underline"><?= $images[$i]['project_title']; ?></h4>
                 <?php endif; ?>
             </a>
         <?php else: ?>
-            <div class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></div>
+            <div data-aos="fade-right" data-aos-delay="50" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></div>
         <?php endif; ?>
     <?php } ?>
 </div>

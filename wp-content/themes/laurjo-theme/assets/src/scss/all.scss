@@ -38,7 +38,7 @@
 // @include foundation-progress-bar;
 // @include foundation-slider;
 // @include foundation-sticky;
-// @include foundation-reveal;
+@include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;
 // @include foundation-tabs;
@@ -54,6 +54,7 @@
 @import "fa-solid.scss";
 @import "fa-regular.scss";
 @import "fa-brands.scss";
+// @import "aos.css";
 
 @import 'normalize';
 
@@ -65,5 +66,6 @@
 @import "partials/buttons";
 @import "partials/images-container";
 @import "partials/case-study-content";
+@import "partials/aos";
 
 @import "global";
