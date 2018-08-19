@@ -95,7 +95,7 @@ $arrow = $cta['cta_arrow_direction']; // will return either 'btn-rev' for left o
             <?php
             // this is for a CTA link that goes back up to parent page
             if ( $cta['back_to_parent'] == 1 ) { ?>
-                <a class="columns small-20 medium-9 back-button <?= $arrow; ?>" href="<?php echo get_permalink( $post->post_parent ); ?>" >
+                <a class="columns small-20 medium-10 back-button <?= $arrow; ?>" href="<?php echo get_permalink( $post->post_parent ); ?>" >
                     <?= $cta['cta_button_text']; ?>
                     <span></span>
                 </a>
