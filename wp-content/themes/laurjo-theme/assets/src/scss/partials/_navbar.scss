@@ -95,6 +95,7 @@
         }
         .menu-item {
             a {
+                color: $color-menu-text;
 
                 &::after {
                     content: '';
@@ -111,7 +112,6 @@
 
             &:hover > a {
                 position: relative;
-                color: $color-font-white;
 
                 &::after {
                     width: 100%;

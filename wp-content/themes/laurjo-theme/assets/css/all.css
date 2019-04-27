@@ -2311,10 +2311,6 @@ textarea {
   textarea[rows] {
     height: auto; }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #cacaca; }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #cacaca; }
@@ -2503,8 +2499,6 @@ select {
 .is-invalid-input:not(:focus) {
   border-color: #cc4b37;
   background-color: #f9ecea; }
-  .is-invalid-input:not(:focus)::-webkit-input-placeholder {
-    color: #cc4b37; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
     color: #cc4b37; }
   .is-invalid-input:not(:focus)::placeholder {
@@ -11304,19 +11298,20 @@ template {
     @media screen and (max-width: 39.9375em) {
       .overlay .menu li {
         margin: 0; } }
-  .overlay .menu .menu-item a::after {
-    content: '';
-    position: absolute;
-    bottom: .5rem;
-    left: .9rem;
-    transition: all ease-in-out .3s;
-    width: 0%;
-    height: 0.5625rem;
-    z-index: -1;
-    background-color: #EC6A5E; }
+  .overlay .menu .menu-item a {
+    color: #F1D8D5; }
+    .overlay .menu .menu-item a::after {
+      content: '';
+      position: absolute;
+      bottom: .5rem;
+      left: .9rem;
+      transition: all ease-in-out .3s;
+      width: 0%;
+      height: 0.5625rem;
+      z-index: -1;
+      background-color: #EC6A5E; }
   .overlay .menu .menu-item:hover > a {
-    position: relative;
-    color: #FFF; }
+    position: relative; }
     .overlay .menu .menu-item:hover > a::after {
       width: 100%;
       transition: all ease-in-out .3s; }

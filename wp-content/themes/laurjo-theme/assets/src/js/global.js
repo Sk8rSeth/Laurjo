@@ -5,7 +5,7 @@ $( document ).ready(function() {
         $('.is-active').removeClass('is-active');
         $('body').removeClass('menu-active');
         $('.menu-text').text('menu');
-    };
+    }
 
     $('button.hamburger').on('click', function(e){
         e.preventDefault();
@@ -33,7 +33,7 @@ $( document ).ready(function() {
             $('.modal-container').find('img').attr('src', $(this).data('image'));
             var popup = new Foundation.Reveal($('#modal-reveal'));
             popup.open();
-        })
+        });
     }
 
 
