@@ -5,10 +5,10 @@
 h1, h1 {
     font-family: $font-grande;
     font-weight: bold;
-    font-size: rem-calc(117);
+    font-size: rem-calc(110);
     text-transform: lowercase;
     margin: 0;
-    line-height: 1.25em;
+    line-height: 1;
     @include breakpoint( small only ) {
         font-size: rem-calc(42);
     }
@@ -63,7 +63,7 @@ h6, .h6 {
 }
 body, p {
     font-family: $font-sans;
-    font-size: rem-calc(16);
+    font-size: rem-calc(18);
     color: $color-font-white;
     line-height: 1.8em;
 }

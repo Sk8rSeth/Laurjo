@@ -11414,10 +11414,10 @@ template {
 h1, h1 {
   font-family: "questa-grande", serif;
   font-weight: bold;
-  font-size: 7.3125rem;
+  font-size: 6.875rem;
   text-transform: lowercase;
   margin: 0;
-  line-height: 1.25em; }
+  line-height: 1; }
   @media screen and (max-width: 39.9375em) {
     h1, h1 {
       font-size: 2.625rem; } }
@@ -11472,7 +11472,7 @@ h6, .h6, .overlay .menu.sub-navigation {
 
 body, p {
   font-family: "questa-sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #FFF;
   line-height: 1.8em; }
 
