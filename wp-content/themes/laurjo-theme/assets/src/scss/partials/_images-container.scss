@@ -55,6 +55,9 @@
 
 
         @include breakpoint(medium up) {
+            .center-container {
+                height: 100%;
+            }
             // image hover state only applicable when image_link included
             &.hover-positive {
 
@@ -74,7 +77,6 @@
                 .hover-text {
                     position: absolute;
                     z-index: 3;
-                    top: 2.5rem;
                     left: 0;
                     opacity: 0;
                     transition: all .3s ease-in-out;

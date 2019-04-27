@@ -11678,6 +11678,8 @@ body, p {
       left: 10%;
       top: 56.25rem; } }
   @media screen and (min-width: 40em) {
+    .images-container .image-link .center-container {
+      height: 100%; }
     .images-container .image-link.hover-positive::after {
       content: '';
       z-index: 2;
@@ -11692,7 +11694,6 @@ body, p {
     .images-container .image-link.hover-positive .hover-text {
       position: absolute;
       z-index: 3;
-      top: 2.5rem;
       left: 0;
       opacity: 0;
       transition: all .3s ease-in-out;
