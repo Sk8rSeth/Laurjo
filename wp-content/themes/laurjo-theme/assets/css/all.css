@@ -11570,16 +11570,6 @@ body, p {
   color: #EFA199;
   position: relative;
   z-index: 10; }
-  .btn-rev::before {
-    content: url("../icons/Arrow-Static-Rev-small.png");
-    height: 1rem;
-    width: 1rem;
-    left: -.75rem;
-    top: 0rem;
-    position: absolute; }
-    @media screen and (max-width: 39.9375em) {
-      .btn-rev::before {
-        left: 1rem; } }
   .btn-rev span {
     height: 1.9px;
     background-color: #ed695e;
@@ -11587,14 +11577,26 @@ body, p {
     position: absolute;
     z-index: 11;
     top: 55.5%;
-    left: -.5rem;
-    transition: all .3s ease-in-out; }
+    left: -.545rem;
+    transition: all .3s ease-in-out;
+    border-radius: 5px; }
+    .btn-rev span.top, .btn-rev span.bottom {
+      -ms-transform-origin: left;
+      transform-origin: left;
+      width: 15px;
+      left: -.49rem; }
+    .btn-rev span.top {
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .btn-rev span.bottom {
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
     @media screen and (max-width: 39.9375em) {
       .btn-rev span {
         display: none; } }
   .btn-rev:hover {
     color: #EFA199; }
-    .btn-rev:hover span {
+    .btn-rev:hover span.lengthen {
       width: 100%;
       transition: all .3s ease-in-out; }
 
@@ -11845,7 +11847,7 @@ body, p {
         margin-top: 7rem; } }
     .case-study-content-container .page-content .body-content p, mobile-case-study .page-content .body-content p {
       color: #FFF;
-      margin-bottom: 4rem;
+      margin-bottom: 5rem;
       text-shadow: 0px 0px 12px #000; }
     .case-study-content-container .page-content .body-content h5, mobile-case-study .page-content .body-content h5 {
       color: #EC6A5E;

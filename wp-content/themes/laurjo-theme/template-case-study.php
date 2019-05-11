@@ -97,13 +97,17 @@ $arrow = $cta['cta_arrow_direction']; // will return either 'btn-rev' for left o
             if ( $cta['back_to_parent'] == 1 ) { ?>
                 <a class="columns small-20 medium-10 back-button <?= $arrow; ?>" href="<?php echo get_permalink( $post->post_parent ); ?>" >
                     <?= $cta['cta_button_text']; ?>
-                    <span></span>
+                    <span class="lengthen"></span>
+                    <span class="top"></span>
+                    <span class="bottom"></span>
                 </a>
             <?php } else {
             // this is for a CTA link that goes to a LINKED PAGE OR A URL ?>
                 <a <?php if (!empty($cta['cta_button_link']['target'])){echo 'target=_blank';} ?> class="fwd-button columns small-20 medium-9 back-button <?= $arrow; ?>" href="<?= $cta['cta_button_link']['url']; ?>" >
                     <?= $cta['cta_button_text']; ?>
-                    <span></span>
+                    <span class="lengthen"></span>
+                    <span class="top"></span>
+                    <span class="bottom"></span>
                 </a>
             <?php } ?>
         </div>

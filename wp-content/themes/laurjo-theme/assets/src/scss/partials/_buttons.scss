@@ -80,18 +80,18 @@
     position: relative;
     z-index: 10;
 
-    &::before {
-        content: url('../icons/Arrow-Static-Rev-small.png');
-        height: 1rem;
-        width: 1rem;
-        left: -.75rem;
-        top: 0rem;
-        position: absolute;
-
-        @include breakpoint( small only ) {
-            left: 1rem;
-        }
-    }
+    // &::before {
+    //     content: url('../icons/Arrow-Static-Rev-small.png');
+    //     height: 1rem;
+    //     width: 1rem;
+    //     left: -.75rem;
+    //     top: 0rem;
+    //     position: absolute;
+    //
+    //     @include breakpoint( small only ) {
+    //         left: 1rem;
+    //     }
+    // }
 
     span {
         height: 1.9px;
@@ -100,8 +100,23 @@
         position: absolute;
         z-index: 11;
         top: 55.5%;
-        left: -.5rem;
+        left: -.545rem;
         transition: all .3s ease-in-out;
+        border-radius: 5px;
+
+        &.top, &.bottom {
+            transform-origin: left;
+            width: 15px;
+            left: -.49rem;
+        }
+
+        &.top {
+            transform: rotate(45deg);
+        }
+
+        &.bottom {
+            transform: rotate(-45deg);
+        }
 
         @include breakpoint( small only ) {
             display: none;
@@ -110,7 +125,7 @@
 
     &:hover {
         color: $color-menu-red;
-        span {
+        span.lengthen {
             width: 100%;
             transition: all .3s ease-in-out;
         }
