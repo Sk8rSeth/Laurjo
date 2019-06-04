@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+jQuery( document ).ready(function($) {
     $(document).foundation();
 
     if ($( window ).width() < 750) {
@@ -34,6 +34,24 @@ $( document ).ready(function() {
             var popup = new Foundation.Reveal($('#modal-reveal'));
             popup.open();
         });
+    }
+
+    // var im = $('.image-link');
+    // var mc = new Hammer(im);
+    // if (Foundation.MediaQuery.is('small only')) {
+    //     mc.on('panleft',function(ev){
+    //         im.fancybox();
+    //     });
+    // }
+
+    if (Foundation.MediaQuery.atLeast('medium')) {
+        var rellax = new Rellax('.rellax');
+
+        var imagesCon = $('.images-container').height();
+        console.log(imagesCon);
+        if (imagesCon) {
+            $('body').css('height',imagesCon);
+        }
     }
 
 

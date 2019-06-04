@@ -1,11 +1,11 @@
 .images-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     @include breakpoint( small only ) {
         overflow-x: hidden;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
     }
 
     .image-link {
@@ -50,6 +50,13 @@
                 width: rem-calc(204);
                 left: 10%;
                 top: rem-calc(900);
+            }
+
+            &.image-5 {
+                height: rem-calc(204);
+                width: rem-calc(204);
+                right: -20%;
+                top: rem-calc(1200);
             }
         }
 
@@ -117,8 +124,8 @@
             &.image-1 {
                 height: rem-calc(360);
                 width: rem-calc(510);
-                left: 18%;
-                top: rem-calc(618);
+                left: 15%;
+                top: rem-calc(635);
             }
 
             &.image-2 {
@@ -142,32 +149,50 @@
                 left: 20%;
                 top: rem-calc(1960);
             }
+
+            &.image-4 {
+                height: rem-calc(400);
+                width: rem-calc(400);
+                left: 25%;
+                top: rem-calc(2000);
+            }
         }
     }
 
     @include breakpoint(small only) {
         &.mobile-case-study .image-link {
-            margin-top: rem-calc(150);
+            z-index: 11;
 
             &.image-0 {
                 right: -20%;
+                left: auto;
             }
 
             &.image-1 {
-                left: 10%;
+                right: -20%;
+                left: auto;
             }
 
             &.image-2 {
-                left: 35%;
+                right: -20%;
+                left: auto;
             }
 
             &.image-3 {
                 right: -20%;
+                left: auto;
             }
 
             &.image-4 {
-                left: 25%;
-                top: rem-calc(1100);
+                right: -20%;
+                left: auto;
+                top: rem-calc(1250);
+            }
+
+            &.image-5 {
+                right: -20%;
+                left: auto;
+                top: rem-calc(1400);
             }
         }
     }

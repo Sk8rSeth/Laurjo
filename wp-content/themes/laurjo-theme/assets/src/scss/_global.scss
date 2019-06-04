@@ -1,7 +1,10 @@
 body {
     background-color: lighten($color-gunmetal, 10%);
+    position: relative;
+    
     @include breakpoint(medium up){
         overflow-x: hidden;
+        height: 100%;
     }
 
     #background-image {

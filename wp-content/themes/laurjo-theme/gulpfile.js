@@ -36,6 +36,9 @@ var paths = {
             'assets/src/js/**/*.js',
             'assets/src/node_modules/aos/dist/aos.js',
             'assets/src/node_modules/foundation-sites/dist/js/foundation.js',
+            'assets/src/node_modules/fancybox/dist/js/jquery.fancybox.js',
+            'assets/src/node_modules/rellax/rellax.min.js',
+            'assets/src/node_modules/hammerjs/hammer.js',
         ]
     },
     sync: [

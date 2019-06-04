@@ -15,6 +15,10 @@
 		<title><?php wp_title(); ?></title>
 
 		<!-- paste google analytics code here -->
+		<!-- ====== -->
+		<?php global $template;
+		echo '<!--' . $template . '-->'; ?>
+		<!-- ====== -->
 
 		<?php wp_head(); ?>
 

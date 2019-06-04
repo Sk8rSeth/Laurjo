@@ -350,9 +350,9 @@ camelcase@^3.0.0:
   integrity sha1-MvxLn82vhF/N9+c7uXysImHwqwo=
 
 caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000963"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000963.tgz#df13099c13d3ad29d8ded5387f77e86319dd3805"
-  integrity sha512-5Qk1jSsqRY3dD7BAjU018y0MsznzYb+kMTKzGknue8vSWlHkw2S345vRnd0cVEerzZ6ugUfoKaUOOVbBxWLWCA==
+  version "1.0.30000967"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000967.tgz#a2e9e6260e026208250f3b2d587ef02314cefa86"
+  integrity sha512-70gk6cLSD5rItxnZ7WUxyCpM9LAjEb1tVzlENQfXQXZS/IiGnfAC6u32G5cZFlDBKjNPBIta/QSx5CZLZepxRA==
 
 cardinal@^2.1.1:
   version "2.1.1"
@@ -751,9 +751,9 @@ ecc-jsbn@~0.1.1:
     safer-buffer "^2.1.0"
 
 electron-to-chromium@^1.2.7:
-  version "1.3.127"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.127.tgz#9b34d3d63ee0f3747967205b953b25fe7feb0e10"
-  integrity sha512-1o25iFRf/dbgauTWalEzmD1EmRN3a2CzP/K7UVpYLEBduk96LF0FyUdCcf4Ry2mAWJ1VxyblFjC93q6qlLwA2A==
+  version "1.3.133"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.133.tgz#c47639c19b91feee3e22fad69f5556142007008c"
+  integrity sha512-lyoC8aoqbbDqsprb6aPdt9n3DpOZZzdz/T4IZKsR0/dkZIxnJVUjjcpOSwA66jPRIOyDAamCTAUqweU05kKNSg==
 
 end-of-stream@~0.1.5:
   version "0.1.5"
@@ -1079,9 +1079,9 @@ glob@^4.3.1:
     once "^1.3.0"
 
 glob@^7.0.0, glob@^7.0.3, glob@^7.1.1, glob@^7.1.3, glob@~7.1.1:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
-  integrity sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
+  integrity sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A==
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"

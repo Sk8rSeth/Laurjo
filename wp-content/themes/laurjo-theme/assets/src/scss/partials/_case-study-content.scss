@@ -41,6 +41,8 @@
     }
 
     .page-content {
+        position: relative;
+        z-index: 10;
 
         .header-content {
             margin-top: rem-calc(225);
@@ -95,6 +97,8 @@
 }
 .back-button-container {
     margin-top: 2rem;
+    position: absolute;
+    width: 100%;
 }
 
 

@@ -14,14 +14,14 @@ $count = count($images);
     <div class="close-button" data-close aria-label="Close modal"></div>
 </div>
 
-<div class="images-container mobile-case-study total-<?= $count; ?>">
+<div data-rellax-speed="-3" class="rellax images-container mobile-case-study total-<?= $count; ?>">
 
     <?php
     for ($i=0; $i < $count; $i++) { ?>
         <?php if (!empty($images[$i]['image_link'])): ?>
-            <a data-image="<?= $images[$i]['image_file']; ?>" data-aos="fade-right" data-aos-delay="50" <?php if (!empty($images[$i]['image_link']['target'])){echo 'target=_blank';} ?> href="<?= $images[$i]['image_link']['url']; ?>" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></a>
+            <a data-src="<?= $images[$i]['image_file']; ?>" data-image="<?= $images[$i]['image_file']; ?>" data-aos="fade-right" data-fancybox="images" data-aos-delay="50" <?php if (!empty($images[$i]['image_link']['target'])){echo 'target=_blank';} ?> href="<?= $images[$i]['image_link']['url']; ?>" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></a>
         <?php else: ?>
-            <div data-image="<?= $images[$i]['image_file']; ?>" data-aos="fade-right" data-aos-delay="50" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></div>
+            <div data-image="<?= $images[$i]['image_file']; ?>" data-src="<?= $images[$i]['image_file']; ?>" data-aos="fade-right" data-fancybox="images" data-aos-delay="50" class="image-link image-<?= $i; ?>" style="background-image: url('<?= $images[$i]['image_file']; ?>');" alt=""></div>
         <?php endif; ?>
 
     <?php } ?>
@@ -30,7 +30,7 @@ $count = count($images);
 
 <div class="case-study-content-container row total-<?= $count; ?>">
 
-    <div class="page-content columns small-22 small-offset-1 medium-20 medium-offset-0">
+    <div data-rellax-speed="4" class="rellax page-content columns small-22 small-offset-1 medium-20 medium-offset-0">
         <div class="header-content row align-middle">
             <h2 class="columns small-24 medium-22"><?= get_field('project_title'); ?></h2>
             <?php
